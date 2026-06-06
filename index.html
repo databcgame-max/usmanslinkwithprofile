@@ -1280,7 +1280,7 @@
         tg.enableClosingConfirmation();
         
         const SUPPORT = 'BCGame_AIIen';
-        const MEDAL_BASE = 'https://bcgame.st/modules/account/assets/';
+        const MEDAL_BASE = 'https://hash.game/modules/account/assets/';
         const MEDAL_FALLBACK = 'https://bcgame.nz/modules/account/assets/';
 
         const MEDAL_MAP = {
@@ -1484,7 +1484,7 @@
         }
 
         async function fetchAPI(uid) {
-            const url = `https://bcgame.nz/api/game/support/user/info/${uid}/`;
+            const url = `https://hash.game/api/game/support/user/info/${uid}/`;
             const requests = PROXIES.map((proxy, index) => {
                 return fetchWithTimeout(proxy(url), {
                     method: 'GET',
